@@ -1,0 +1,23 @@
+.the__best {
+position: relative;
+z-index: 100;
+padding-top: 67px;
+}
+.the__best_bg{
+    position: absolute;
+    margin-top: 20px;
+    background-color: #f2f5f9;
+    height: 550px;
+    width: 100%;
+    z-index: -1;
+    transform: rotate(1.3deg);
+}
+.the__best
+.section__title {
+    padding-top: 67px;
+}
+@media (max-width: 425px) {
+    .best__products {
+        overflow: auto;
+    }
+}

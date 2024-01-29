@@ -1,0 +1,73 @@
+.hero {
+display: flex;
+justify-content: space-between;
+padding-top: 40px;
+padding-bottom: 53px;
+}
+.hero__banner_large {
+max-width: 899px;
+width: 100%;
+border-radius: 16px;
+padding: 40px;
+background-color: #F2F5F9;
+margin-right: 32px;
+}
+.hero__banner_large h1 {
+    /* font-size: 48px; */
+    font-size: clamp(20px, 4vw , 48px);
+    font-weight: 800;
+    line-height: 72px;
+    margin-bottom: 32px; 
+}
+.hero__banner_large h1 span,
+.hero__banner_small h2 span 
+{
+    color: #FF4D4D;
+}
+
+.hero__banner_small {
+max-width: 509px;
+width: 100%;
+border-radius: 16px;
+padding: 40px;
+background-color: #F2F5F9;
+position: relative;
+z-index: 10;
+}
+.bg__banner_small {
+    position: absolute;
+    z-index: -1;
+    width: 200px;
+    height: 100%;
+    background: url("../assets/img/iphone.jpg") #F2F5F9 50% no-repeat;
+    background-blend-mode:darken;
+    background-position-y: bottom;
+    bottom: 0;
+    right: 44px;
+}
+.hero__banner_small h2 {
+    font-size: 40px;
+    font-weight: 800;
+    font-size: clamp(20px, 6vw , 40px);
+    line-height: 58px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        row-gap: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+
+    }
+}
+
+@media (max-width: 245px) {
+    .hero {
+background-size:135px ;
+    }
+}
